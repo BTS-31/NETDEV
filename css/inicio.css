@@ -1,0 +1,527 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: url(../img/fundohome.png);
+    
+}
+
+#menu-principal {
+    width: 100%;
+    background-color: #110230;
+    height: 90px;
+    border-bottom: 3px solid #a63ffafb;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.header-2 {
+    width: 980px;
+    margin: 0 auto;
+    padding: 16px;
+    border-radius: 8px;
+    
+}
+
+.menu {
+    width: 800px;
+    height: 50px;
+    padding: 0;
+    display: inline;
+    position: relative;
+    
+}
+
+.menu ul li {
+    display:  inline;
+    margin-right: 8px;
+    color: rgb(17, 238, 238);
+    padding: 1;
+    font-size: large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a{ 
+    color: rgba(121, 233, 236, 0.753);
+    text-decoration: none;
+
+}
+
+.menu a:hover{
+    color: #a63ffafb;
+}
+
+.btn{
+    width: 90px;
+    height: 25px;
+    float: right;
+    position: relative;
+    bottom: 20px;
+    left: 110px;
+    color: rgb(27, 221, 221);
+    border-color: rgb(27, 221, 221);
+    border-radius: 10%;
+    background: transparent;
+}
+
+.btn:hover{
+    background-color:  #a86ff321;
+    color: rgba(78, 218, 43, 0.979);
+    border-color: #843ee0;
+    border-radius: 15%;
+}
+
+.busca{
+    float: right;
+    position: relative;
+    right:180px;
+    bottom: 18px;
+    margin-top: -20px;
+    border-radius: 30px;
+    margin-right: -110px;
+}
+
+
+.logo {    
+    float: left;
+    width: 10%;
+    display: inline;
+    position: relative;
+    left: 100px;
+    top: 10px;
+}
+
+.redes-sociais ul li  {
+    display: inline;
+    position: relative;
+    top: 8px;
+    float: left;
+    list-style: none;
+    left: 150px;
+    margin: 5px;
+}
+
+.redes-sociais {
+    width: 25%;
+    float: right;
+    margin: 5px;
+}
+
+
+main {
+    margin: 0 auto;
+    width: 980px;
+    position: relative;
+}
+
+/* #rodape{
+    clear: both;
+} */
+.clear{
+    clear: both; 
+}
+
+.slides{
+    height: 500px;
+    width: 89.5%;
+    overflow: hidden;
+    position: relative;
+    border: 8px solid #390a77
+    box-shadow rgba(238, 31, 31, 0.945)  0px 5px 15px;
+    padding: 100px;
+}
+
+.slide{
+    position: absolute;
+    height: 100%;
+    opacity: 1%;
+    inset: 0;
+    animation: slide-show 12s infinite;
+}
+
+.slide-2{
+    animation-delay: 4s;
+}
+
+.slide-3{
+        animation-delay: 8s;
+}
+
+.slide img{
+    width: 100%;
+    height: 90%;
+    object-position: center;
+}
+
+@keyframes slide-show{
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    20%,
+    30%{
+        opacity: 1;
+        scale: 1.03;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+.carrossel-caption {
+    text-align: center;
+    padding-block: auto;
+    font-size: large;
+    color: aqua;
+
+}
+
+.container{
+    width: 100%;
+    height: 450px;
+    margin-top: 250px;
+    background-color: rgba(20, 20, 20, 0.788);
+}
+.text{
+    width:95%;
+    height: 400px;
+    margin:10px;
+    text-align: justify;
+    color: aqua;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+.titulo{
+    font-size: xx-large;
+    text-align: center;
+    color: aqua;
+    padding-top: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    
+}
+
+.t2{
+    font-size: large;
+    margin-top: auto;
+    padding-top: 5px;
+    color: rgb(25, 219, 233);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.container-cursos{
+    width: 100%;
+    height: 400px;
+    margin-top: 400px;
+    display: block;   
+}
+.cursos{
+    width: 350px;
+    display: block;
+    flex-direction: row;
+    float: left;
+    margin: 50px;
+    text-align: center;
+    background: rgba(20, 20, 20, 0.788);
+    border-radius: 10%;
+    height: 400px;
+    padding-left:8px ;
+    padding-right:8px ;
+}
+
+
+.imagens{
+    width: 30%;
+}
+
+H3 {
+    position: relative;
+    top: 5px;
+    text-align: center;
+    font-size:x-large;
+    font-family: 'Times New Roman', Times, serif;
+    color: #0a0edf;
+}
+
+#html, #js, #php, #rjs{
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    top: 10px;
+    color: aqua;
+}
+
+
+.glow-on-hover-html{
+    border-radius: 30px;
+    color: rgb(27, 221, 221);
+    border-color: rgb(27, 221, 221);
+    background: #04010a;
+    padding: 8px;
+    position: relative;
+    top: 40px;
+}
+.glow-on-hover-html:hover{  
+    background: rgb(164, 180, 214);
+    color: rgb(174, 0, 255);
+    border-color: #4c0aa3;
+
+}
+
+.glow-on-hover-javascript{
+    border-radius: 30px;
+    color: rgb(27, 221, 221);
+    border-color: rgb(27, 221, 221);
+    background: #04010a;
+    padding: 8px;
+    position: relative;
+    top: 15px;
+    
+}
+.glow-on-hover-javascript:hover{  
+    background: rgb(164, 180, 214);
+    color: rgb(174, 0, 255);
+    border-color: #4c0aa3;
+
+}
+
+.glow-on-hover-php{
+    border-radius: 30px;
+    color: rgb(27, 221, 221);
+    border-color: rgb(27, 221, 221);
+    background: #04010a;
+    padding: 8px;
+    position: relative;
+    top: 105px;
+    
+}
+.glow-on-hover-php:hover{  
+    background: rgb(164, 180, 214);
+    color: rgb(174, 0, 255);
+    border-color: #4c0aa3;
+
+}
+
+.glow-on-hover-react{
+    border-radius: 30px;
+    color: rgb(27, 221, 221);
+    border-color: rgb(27, 221, 221);
+    background: #04010a;
+    padding: 8px;
+    position: relative;
+    top: 100px;
+    
+}
+.glow-on-hover-react:hover{  
+    background: rgb(164, 180, 214);
+    color: rgb(174, 0, 255);
+    border-color: #4c0aa3;
+
+}
+
+/* Depoimentos*/
+.card {
+    width: 400px;
+    height: 450px;
+    background-size: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.about-image img-fluid{
+    border-radius: 10PX;
+}
+.depoimentos{
+    width: 100%;
+    height: 400px;
+    display: block; 
+    margin-top: 800px;
+}
+
+.cursos-depoimentos{
+    width: 350px;
+    height: 600px;
+    display: block;
+    flex-direction: row;
+    float: left;
+    margin: 50px;
+    text-align: center;
+    border-radius: 10%;
+    padding-left:8px ;
+    padding-right:8px ;
+    margin-left: 50px;
+    background: rgba(20, 20, 20, 0.788)
+}
+
+.section-title{
+    text-align: center;
+    font-size: x-large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgba(136, 247, 247, 0.911);
+}
+
+.section-title-bottom{
+    flex-direction: row;
+    margin-left: 700px;
+    
+}
+
+span {
+    position: absolute;
+    display: block;
+}
+
+.image{
+    border-radius: 20px;
+}
+
+.tt-dp{
+    position: relative;
+    top: 0px;
+    text-align: center;
+    font-size:x-large;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(136, 247, 247, 0.911);
+    
+}
+
+.texto-depo{
+    text-align: justify;
+    color:  rgba(136, 247, 247, 0.911);
+}
+
+
+/*Formulário - Loguin*/
+#formulario{
+    width: 600px;
+    height: 300px;
+    background: rgba(25, 219, 233, 0.377);
+    border-radius: 30px;
+    text-align: center;
+    margin: 300px auto;
+}
+
+#formulario2{
+    position: relative;
+    top: 25px;
+    width: 450px;
+    height: 250px;
+    margin: 30px auto;
+    background: #04010a;
+    border-radius: 30px;
+}
+
+#formulario3{
+    position: relative;
+    top: 60px;
+    width: 450px;
+    height: 250px;
+    margin: 30px auto;
+    border-radius: 30px;
+}
+
+.formulário-texto{
+    position: relative;
+    left: 3px;
+    border-radius: 15px;
+    height: 25px;
+    width: 200px;
+}
+
+.formulario-senha{
+    border-radius: 15px;
+    width: 200px;
+    height: 25px;
+}
+
+#editar-senha{
+    position: relative;
+    left: 13px;
+}
+
+.botao-formulario{
+    width: 100px;
+    border-radius: 30px;
+}
+.botao-formulario:hover{
+    background: rgb(164, 180, 214);
+}
+
+
+/*Formulário - Registro*/
+#formulario-registro{
+    width: 600px;
+    height: 500px;
+    background: rgba(25, 219, 233, 0.377);
+    border-radius: 30px;
+    text-align: center;
+    margin: 300px auto;
+}
+
+#formulario2-registro{
+    position: relative;
+    top: 45px;
+    width: 450px;
+    height: 400px;
+    margin: 30px auto;
+    background: #04010a;
+    border-radius: 30px;
+}
+
+#formulario3-registro{
+    position: relative;
+    top: 60px;
+    width: 450px;
+    height: 250px;
+    margin: 30px auto;
+    border-radius: 30px;
+}
+
+.formulário-texto-registro{
+    position: relative;
+    left: 3px;
+    border-radius: 15px;
+    height: 25px;
+    width: 200px;
+}
+
+.formulario-senha-registro{
+    border-radius: 15px;
+    width: 200px;
+    height: 25px;
+}
+
+#editar-senha-registro{
+    position: relative;
+    left: 13px;
+}
+
+.botao-formulario-registro{
+    width: 100px;
+    border-radius: 30px;
+}
+.botao-formulario-registro:hover{
+    background: rgb(164, 180, 214);
+}
+
+
+/*Rodape*/
+
+.rodape{
+    display: block;
+    position: relative;
+    color:#000000;
+    padding:0.5rem;
+    background-color: rgba(25, 219, 233, 0.171);
+    font-family:"Abel", sans-serif;
+    font-size: 0.93rem;
+    text-align: center;
+    margin-top: 1500px;
+}
+
+
+
+
