@@ -1,206 +1,222 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-    
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Inicio</title>
-        <link rel="stylesheet" href="css/inicio.css">
-        
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <!--Configuração de media query-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/inicio.css">
+    <script src="script.js" defer></script>
+
+
+</head>
+
 <body>
-    <nav class="navbar" id="menu-principal">
-        <div class="header-1">
-                    <div class="logo">
-                        <img src="./IMG/logo.png" width="100px" height="70px"/>
-                    </div>
-                        <div class="redes-sociais">
-                            <ul>
-                            <li> <a href="https://www.facebook.com"><img src="./IMG/faceico.png" id="face"></a></li>
-                            <li> <a href="https://www.twitter.com"><img src="./IMG/twitterico.png" id="twiter"></a></li>
-                            <li> <a href="https://www.linkedin.com/"><img src="./IMG/linkedinico.png" id="linkedin"></a></li>
-                            <li> <a href="https://www.instagram.com/"><img src="./IMG/icoinsta.png"></a></li>
-                            </ul>
-                        </div>
-                </div>
-            <main class="col-100 menu-urls">
-                <div class="header-2">
-                    <div class="menu">
-                        <ul>
-                            <li>
-                                <a href="index.html">Início</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_2">Quem Somos</a>
-                            </li>
-                            <li lass="nav-item">
-                                <a class="nav-link click-scroll" href="#cursos">Cursos</a>
-                            </li>
-                            <li>
-                                <a href="cadastro.html" target="_blank">
-                                    Cadastro</a>
-                            </li>
-                            <li>
-                                <a href="">Informações</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#dp">Depoimentos</a>
-                            </li>
-                            <li>
-                                <a href="loguin.html" target="_blank">Login</a>
-                            </li>
-                            <li>
-                                <a href="">Contato</a>
-                            </li>
-                        </ul>
-                        <div class="busca">
-                            <form class="pesquisar">
-                                <input type="search" id="pesquisar" plaeholder="search" name="pesquisar">
-                            </form>
-                            <button class="btn"  submit="pesquisar">Pesquisar</button>
-                        </div>
-                    </div>
-                </div>
-                </main>
-            </div>
-    </nav>
-        <!--Slides-->
-        <div class="slides">
-            <div class="slide slide-1">
-                <img src="img/lg.png" widh="100%" height="300px" alt="slide1">
-                <div class="carrossel-caption d-none d-md-block">
-                    BEM-VINDO A NETDEV!
-                    <br>Academia de Ensino para a área de Tecnologia.
-                </div>
-            </div>
-            <div class="slide slide-2">
-                <img src="img/cursos.jpg" widh="100%" height="300px" alt="slide2">
-                <div class="carrossel-caption d-none d-md-block">
-                    Cursos e Linguagens
-                    <br> NETDEV oferece à você diversos cursos e Linguagens de programação com qualidade.
-                </div>
-            </div>
-            <div class="slide slide-3">
-                <img src="img/parceiros.jpg" widh="100%" height="300px" alt="slide3">
-                <div class="carrossel-caption d-none d-md-block">
-                    NETDEV
-                    <br>Temos parceria com as melhores empresas no ramo da tecnologia para ajudar você a se
-                        tornar um profissional de excelência.
+    <!--Menu-->
+<div class="container-menu">
+        <div class="logo">
+                <img src="./IMG/logos.png" width="100px" height="80px" />
+        </div>
+    <div class="menuPrincipal">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_2">Quem Somos</a>
+                    </li>
+                    <li lass="nav-item">
+                        <a class="nav-link click-scroll" href="#cursos">Cursos</a>
+                    </li>
+                    <li>
+                        <a href="cadastro.html" target="_blank">
+                            Cadastro</a>
+                    </li>
+                    <li>
+                        <a href="">Informações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#dp">Depoimentos</a>
+                    </li>
+                    <li>
+                        <a href="loguin.html" target="_blank">Login</a>
+                    </li>
+                    <li>
+                        <a href="">Contato</a>
+                    </li>
+                </ul>
+                <div class="search-container">
+                   
+                        <input type="text" id="search-input" placeholder="Pesquise" name="pesquisar">
+                        <button id="search-button">🔍</button>
+                        <!--<button class="btn" submit="pesquisar">Pesquisar</button>-->
+                    
                 </div>
             </div>
         </div>
-        <section id="section_2">
-            <div class="container">
-                    <div class="text">
-                        <div class="titulo">
-                            <p class="titulo">A NETDEV
-                            <p class="titulo">Quem Somos?
-                        </div>
-                            <p class="t2">Origem</p>
-                        <br>Começamos com um grupo de alunos em um curso de programação básico. Através de um trabalho que deveria ser apresentado,
-                        criamos a NETDEV. No início foi apenas um trabalho, mas a cada linha digitada, a ideia foi criando força, então decidimos
-                        dar continuidade no projeto. Assim nasceu a NETDEV, um trabalho de um curso para todo aquele que deseja mudar de carreira,
-                        melhorar no mercado de  trabalho, se desafiar, enfim qualquer que seja seu objetivo, a NETEDEV tem para você.
-                        Somos uma plataforma de streaming, dedicada ao ensino de linguagens de programação.
-                        <p>Visão:</p>
-                        “Queremos ser líderes na transformação digital da educação, capacitando estudantes e profissionais para o mercado de trabalho do século XXI.”
-                        Impacto: Fale sobre o impacto que você deseja causar. Por exemplo:
-                        “Buscamos inspirar uma nova geração de desenvolvedores apaixonados por tecnologia.”</p>
-                        <p>Missão:</p>
-                        Nossa missão é tornar a programação acessível a todos, independentemente do nível de conhecimento.
-                            Para isso contamos com uma seleção de excelentes professores capacitados para transmitir a você o melhor ensino.”</p>
-                    </div>
-            </div>
-        </section>
-        
-            <section id="cursos"><!--inicio section cursos-->
-                    <div class="container-cursos">
-                        <div class="titulo">NOSSOS CURSOS</div>
-
-                        <div class="cursos">
-                            <H3 class="titulo-cursos">HTML & CSS</H3>
-                                <a href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n"><img class="imagens" src="img/cursos/html css.png" alt=""></a>
-                                    <p class="texto-cursos" id="html">
-                                    HTML e CSS são duas linguagens fundamentais presentes em 100% dos sites.
-                                    Ambas atuam na parte visual, sendo essenciais para a construção dos elementos visuais do site.
-                                    Junto com o JavaScript, essas linguagens são responsáveis pelo desenvolvimento Front-end, 
-                                    que é a parte visual do site, onde o usuário interage e visualiza as informações.
-                                    </p>
-                        <div >
-                                <a href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n"  class="glow-on-hover-html" type="button">  Acessar Curso</a>
-                        </div>
-                    </div>            
-                                        
-                    <div class="cursos">
-                        <H3 class="titulo-cursos">JAVA SCRIPT</H3>
-                        <img class="imagens" src="img/cursos/js.png" alt="">
-                        <p class="texto-cursos" id="js">
-                            JavaScript é uma linguagem de programação que permite a você implementar itens complexos em páginas web — toda vez que uma página da web faz mais do que simplesmente mostrar a você informação estática — mostrando conteúdo que se atualiza em um intervalo de tempo, 
-                            mapas interativos ou gráficos 2D/3D animados, etc. 
-                        </p>
-                        <div>
-                            <a href="https://youtu.be/TkD0QMyBa28?si=57ryXZQQ9JZ1cBNg" class="glow-on-hover-javascript" type="button" >
-                                Acessar Curso</a>
-                        </div>
-                    </div>
-                    <div class="cursos">
-                        <H3 class="titulo-cursos">PHP</H3>
-                        <img class="imagens" src="img/cursos/php.png" >
-                        <p class="texto-cursos" id="php">
-                            PHP é uma linguagem interpretada livre, usada originalmente apenas para o desenvolvimento de aplicações presentes e atuantes no lado do servidor, capazes de gerar conteúdo dinâmico na World Wide Web.
-                        </p>
-                        <div>
-                            <a href="https://youtu.be/zXkH4otWWKE?si=A1Eb4HCE3v4dF4Qm" class="glow-on-hover-php" type="button">
-                                Acessar Curso</a>
-                        </div>
-                    </div>
-                    <div class="cursos">
-                        <H3 class="titulo-cursos">REACT JS</H3>
-                        <img class="imagens" src="img/cursos/ReactJS.jpg" alt="">
-                        <p class="texto-cursos" id="rjs">
-                            O React é uma biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.
-                        </p>
-                        <div>
-                            <a href="https://youtu.be/FXqX7oof0I4?si=4ZupuVUi3CAbYSX-" class="glow-on-hover-react" type="button">
-                                Acessar Curso</a>
-                        </div>
-                    </div>
-                </div>
-            </section><!--fim section cursos-->
-
-            <!--inicio depoimentos-->
-            <section class="depoimentos" id="dp">
-                <div class="col-lg-12 col-12">
-                    <div class="section-title-wrap mb-5">
-                        <h2 class="section-title">DEPOIMENTOS</h2>
-
-                        <div class="section-title-bottom">
-                            <img src="img/depo.png" width="150px" height="100px" fill="currentColor" alt="">
-                        </div>
-
-                    </div>
-                </div>
-                <div class="cursos-depoimentos">
-                        <H3 class="tt-dp" >BATMAN BEGINS</H3>
-                        <img src="img/depo2.webp" class="image" widht="350px" height="350px" alt="BATMAN" >
-                        <p class="texto-depo">
-                            A <i><b>NETDEV</b></i>  foi um divisor de águas na minha vida, não é sempre que estou usando esta capa, então quando não estou salvando vidas, 
-                            estou estudando, não sei até quando serei o BATMAN, uma hora dessas alguém me substitui, além disso, todos sabem que eu sou bom com tecnologia.
-                            A flexbilidade que a <i><b>NETDEV</b></i> me oferece é maravilhoso, consigo estudar até mesmo em cima dos telhados."
-                        </p>
-                            
-                </div>
-            </section><!--fim section depoimentos-->
-        
+        <div class="redes-sociais">
+            <ul>
+                <li> <a href="https://www.facebook.com"><img src="./IMG/faceico.png" id="face"></a></li>
+                <li> <a href="https://www.twitter.com"><img src="./IMG/twitterico.png" id="twiter"></a></li>
+                <li> <a href="https://www.linkedin.com/"><img src="./IMG/linkedinico.png" id="linkedin"></a></li>
+                <li> <a href="https://www.instagram.com/"><img src="./IMG/icoinsta.png"></a></li>
+            </ul>
         </div>
-    
-
-<footer>
-    <div class="rodape">
-        © todos os direitos reservados
+</div>
+    <!--Slides-->
+    <div class="contaneir-slides">
+        <div class="slide slide-1">
+            <img src="img/lg.png" widh="100%" height="300px" alt="slide1">
+            <div class="carrossel-caption d-none d-md-block">
+                BEM-VINDO A NETDEV!
+                <br>Academia de Ensino para a área de Tecnologia.
+            </div>
+        </div>
+        <div class="slide slide-2">
+            <img src="img/cursos.jpg" widh="100%" height="300px" alt="slide2">
+            <div class="carrossel-caption d-none d-md-block">
+                Cursos e Linguagens
+                <br> NETDEV oferece à você diversos cursos e Linguagens de programação com qualidade.
+            </div>
+        </div>
+        <div class="slide slide-3">
+            <img src="img/parceiros.jpg" widh="100%" height="300px" alt="slide3">
+            <div class="carrossel-caption d-none d-md-block">
+                NETDEV
+                <br>Temos parceria com as melhores empresas no ramo da tecnologia para ajudar você a se
+                tornar um profissional de excelência.
+            </div>
+        </div>
     </div>
-</footer>
+    <section id="section_2">
+        <div class="container-ND">
+            <div class="text">
+                <div class="titulo">
+                    A NETDEV. <br>Quem Somos!
+                </div>
+                <p class="t2">Origem:</p>
+                <p>Começamos com um grupo de alunos em um curso de programação. Através de um trabalho que deveria ser
+                    apresentado,
+                    criamos a NETDEV. No início foi apenas um trabalho, mas a cada linha digitada, a ideia foi criando
+                    força, então decidimos
+                    dar continuidade no projeto. Assim nasceu a NETDEV, um trabalho de um curso para todo aquele que
+                    deseja mudar de carreira,
+                    melhorar no mercado de trabalho, se desafiar, enfim qualquer que seja seu objetivo, a NETEDEV tem
+                    para você.
+                    Somos uma plataforma de streaming, dedicada ao ensino de linguagens de programação.</p>
+                <p class="t2">Visão:</p>
+                <P>Queremos ser líderes na transformação digital da educação, capacitando estudantes e profissionais
+                    para o mercado de trabalho do século XXI.
+                    <br>Impacto: Buscamos inspirar uma nova geração de desenvolvedores apaixonados por tecnologia.
+                <p class="t2">Missão:</p>
+                <P>Nossa missão é tornar a programação acessível a todos, independentemente do nível de conhecimento.
+                    Para isso contamos com uma seleção de excelentes professores capacitados para transmitir a você o
+                    melhor ensino.”</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cursos"><!--inicio section cursos-->
+        <div class="container-cursos">
+            <div class="titulo">NOSSOS CURSOS</div>
+
+            <div class="cursos">
+                <H3 class="titulo-cursos">HTML & CSS</H3>
+                <a href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n"><img
+                        class="imagens" src="img/cursos/html css.png" alt=""></a>
+                <p class="texto-cursos" id="html">
+                    HTML e CSS são duas linguagens fundamentais presentes em 100% dos sites.
+                    Ambas atuam na parte visual, sendo essenciais para a construção dos elementos visuais do site.
+                    Junto com o JavaScript, essas linguagens são responsáveis pelo desenvolvimento Front-end,
+                    que é a parte visual do site, onde o usuário interage e visualiza as informações.
+                </p>
+                <div>
+                    <a href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n"
+                        class="glow-on-hover-html" type="button"> Acessar Curso</a>
+                </div>
+            </div>
+
+            <div class="cursos">
+                <H3 class="titulo-cursos">JAVA SCRIPT</H3>
+                <img class="imagens" src="img/cursos/js.png" alt="">
+                <p class="texto-cursos" id="js">
+                    JavaScript é uma linguagem de programação que permite a você implementar itens complexos em páginas
+                    web — toda vez que uma página da web faz mais do que simplesmente mostrar a você informação estática
+                    — mostrando conteúdo que se atualiza em um intervalo de tempo,
+                    mapas interativos ou gráficos 2D/3D animados, etc.
+                </p>
+                <div>
+                    <a href="https://youtu.be/TkD0QMyBa28?si=57ryXZQQ9JZ1cBNg" class="glow-on-hover-javascript"
+                        type="button">
+                        Acessar Curso</a>
+                </div>
+            </div>
+            <div class="cursos">
+                <H3 class="titulo-cursos">PHP</H3>
+                <img class="imagens" src="img/cursos/php.png">
+                <p class="texto-cursos" id="php">
+                    PHP é uma linguagem interpretada livre, usada originalmente apenas para o desenvolvimento de
+                    aplicações presentes e atuantes no lado do servidor, capazes de gerar conteúdo dinâmico na World
+                    Wide Web.
+                </p>
+                <div>
+                    <a href="https://youtu.be/zXkH4otWWKE?si=A1Eb4HCE3v4dF4Qm" class="glow-on-hover-php" type="button">
+                        Acessar Curso</a>
+                </div>
+            </div>
+            <div class="cursos">
+                <H3 class="titulo-cursos">REACT JS</H3>
+                <img class="imagens" src="img/cursos/ReactJS.jpg" alt="">
+                <p class="texto-cursos" id="rjs">
+                    O React é uma biblioteca front-end JavaScript de código aberto com foco em criar interfaces de
+                    usuário em páginas web.
+                </p>
+                <div>
+                    <a href="https://youtu.be/FXqX7oof0I4?si=4ZupuVUi3CAbYSX-" class="glow-on-hover-react"
+                        type="button">
+                        Acessar Curso</a>
+                </div>
+            </div>
+        </div>
+    </section><!--fim section cursos-->
+
+    <!--inicio depoimentos-->
+    <section class="depoimentos" id="dp">
+        <div class="col-lg-12 col-12">
+            <div class="section-title-wrap mb-5">
+                <h2 class="section-title">DEPOIMENTOS</h2>
+
+                <div class="section-title-bottom">
+                    <img src="img/depo.png" width="150px" height="100px" fill="currentColor" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div class="cursos-depoimentos">
+            <H3 class="tt-dp">BATMAN BEGINS</H3>
+            <img src="img/depo2.jpeg" class="image" widht="350px" height="350px" alt="BATMAN">
+            <p class="texto-depo">
+                A <i><b>NETDEV</b></i> foi um divisor de águas na minha vida, não é sempre que estou usando esta capa,
+                então quando não estou salvando vidas,
+                estou estudando, não sei até quando serei o BATMAN, uma hora dessas alguém me substitui, além disso,
+                todos sabem que eu sou bom com tecnologia.
+                A flexbilidade que a <i><b>NETDEV</b></i> me oferece é maravilhoso, consigo estudar até mesmo em cima
+                dos telhados."
+            </p>
+
+        </div>
+    </section><!--fim section depoimentos-->
+
+    </div>
+
+
+    <footer>
+        <div class="rodape">
+            © todos os direitos reservados
+        </div>
+    </footer>
     <!--<div id="rodape">
         © todos os direitos reservados
     </div>-->
@@ -208,4 +224,5 @@
 
 
 </body>
+
 </html>
