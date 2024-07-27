@@ -1,173 +1,261 @@
-html,body{
+/* CSS reset(reiniciar) */
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    /* O box-sizing com o valor border-box faz com que o navegador não calcule
+    a dimensão de um elemento somando bordas e margens com altura e largura.
+    */
+    box-sizing: border-box;
+}
+
+
+html,
+body {
     width: 100%;
     height: 100%;
-    margin: 0px;
-    padding: 0px;
-    background: url(../img/fundohome.png);
-    
+    background: url(../img/background.jpg);
 }
 
-#menu-principal {
-    width: 100%;
-    background-color: #110230;
-    height: 90px;
-    border-bottom: 3px solid #a63ffafb;
-    margin: 0px;
-    padding: 0px;
-    
+.container-menu {
+    /* Incluído */
+    display: flex;
+    flex-wrap: wrap;
+    /*  */
+    background-color: #706e752d;
+    border-bottom: 3px solid #591194c5;
 }
 
-.header-2 {
-    width: 980px;
-    margin: 0 auto;
-    padding: 16px;
-    border-radius: 8px;
-    
+.menuPrincipal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    gap: 3rem;
 }
 
 .menu {
-    width: 800px;
-    height: 50px;
-    padding: 0;
-    display: inline;
-    position: relative;
-    
+    display: flex;
+    justify-content:space-between;
+    list-style: none;
+    /*margin-left: 10px;*/
+    gap: 1rem;
+    flex-direction: row;
+    gap: 2,5rem;
 }
 
 .menu ul li {
-    display:  inline;
-    margin-right: 8px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    flex-direction:row;  
+    /*margin-right: 8px;*/
     color: rgb(17, 238, 238);
     padding: 1;
     font-size: large;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-a{ 
-    color: rgba(121, 233, 236, 0.753);
-    text-decoration: none;
-
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    flex-direction: row;  
 }
 
-.menu a:hover{
+.search-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:0,8rem;
+    border: 2px solid #000;
+    background: #fff;
+    border-radius: 5px;
+}
+
+#search-input {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 10px;
+}
+
+#search-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:0,5rem;
+    border: none;
+    background: none;
+    font-size: 18px;
+    /*cursor: pointer;*/
+    margin-left: 5px;
+}
+
+#search-results {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    /*width: 100%;
+    /*max-width: 600px;*/
+}
+
+#search-results li {
+    background: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+.content {
+    width: 100%;
+    max-width: 600px;
+}
+
+.content html, .content body {
+    margin: 10px 0;
+}
+
+.redes-sociais {
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+.redes-sociais ul {
+    /* Caso queira que as Redes fiquem em coluna, colocar comentários nestas duas linhas */
+    display: flex;
+    justify-content: space-evenly;
+    /*  */
+    align-items: center;
+    list-style: none;
+    gap: 5px;
+}
+
+/* Colocar a descrição da rede em baixo do ícone */
+/* .redes-sociais ul li a img{
+    display: flex;    
+} */
+
+.redes-sociais img {
+    width: 20px;
+}
+
+/* Fim Itens Novos */
+
+a {
+    /* color: rgba(121, 233, 236, 0.753); */
+    text-decoration: none;
+}
+
+.menu a:hover {
     color: #a63ffafb;
 }
 
-.btn{
-    width: 90px;
-    height: 25px;
-    float: right;
-    position: relative;
-    bottom: 20px;
-    left: 110px;
+/* Botão Original */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 30px;
     color: rgb(27, 221, 221);
     border-color: rgb(27, 221, 221);
     border-radius: 10%;
+    gap:3rem;
     background: transparent;
-}
+} 
 
-.btn:hover{
-    background-color:  #a86ff321;
+/* Intem Alterado */
+/*.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: blue;
+    background: rgb(233, 231, 231);
+    border: 2px solid rgba(9, 218, 30, 0.847);
+    border-radius: 10px;
+    padding: 1rem;
+}*/
+
+.btn:hover {
+    background-color: #a86ff321;
     color: rgba(78, 218, 43, 0.979);
     border-color: #843ee0;
     border-radius: 15%;
 }
 
-.busca{
-    float: right;
-    position: relative;
-    right:180px;
-    bottom: 18px;
-    margin-top: -20px;
-    border-radius: 30px;
-    margin-right: -110px;
-}
-
-
-.logo {    
-    float: left;
-    width: 10%;
-    display: inline;
-    position: relative;
-    left: 100px;
-    top: 10px;
-}
-
-.redes-sociais ul li  {
-    display: inline;
-    position: relative;
-    top: 8px;
-    float: left;
-    list-style: none;
-    left: 150px;
-    margin: 5px;
-}
-
-.redes-sociais {
-    width: 25%;
-    float: right;
-    margin: 5px;
-}
-
+/*  */
 
 main {
-    margin: 0 auto;
-    width: 980px;
+    margin: auto;
+    width: auto;
     position: relative;
 }
 
 /* #rodape{
     clear: both;
 } */
-.clear{
-    clear: both; 
+.clear {
+    clear: both;
 }
 
-.slides{
-    height: 500px;
-    width: 89.5%;
-    overflow: hidden;
+.contaneir-slides {
+    height: 450px;
+    display: flex;
+    flex-direction:column;
     position: relative;
-    border: 8px solid #390a77
-    box-shadow rgba(238, 31, 31, 0.945)  0px 5px 15px;
-    padding: 100px;
+    gap: 50px;
+    margin-top: 100px;
+    
 }
 
-.slide{
+.slide {
     position: absolute;
     height: 100%;
     opacity: 1%;
     inset: 0;
-    animation: slide-show 12s infinite;
+    animation: slide-show 14s infinite;
 }
 
-.slide-2{
-    animation-delay: 4s;
+.slide-2 {
+    animation-delay: 5s;
 }
 
-.slide-3{
-        animation-delay: 8s;
+.slide-3 {
+    animation-delay: 10s;
 }
 
-.slide img{
+.slide img {
     width: 100%;
     height: 90%;
     object-position: center;
 }
 
-@keyframes slide-show{
-    0%{
+@keyframes slide-show {
+    0% {
         opacity: 0;
     }
-    10%{
+
+    10% {
         opacity: 1;
     }
+
     20%,
-    30%{
+    30% {
         opacity: 1;
         scale: 1.03;
     }
-    50%{
+
+    50% {
         opacity: 0;
     }
 }
@@ -180,46 +268,51 @@ main {
 
 }
 
-.container{
+.container-ND {
     width: 100%;
-    height: 450px;
+    height: 500px;
     margin-top: 250px;
     background-color: rgba(20, 20, 20, 0.788);
 }
-.text{
-    width:95%;
+
+.text {
+    width: 95%;
     height: 400px;
-    margin:10px;
+    margin: 10px;
     text-align: justify;
     color: aqua;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
+    font-family: 'Times New Roman', Times, serif;
+
 }
 
-.titulo{
+.titulo {
     font-size: xx-large;
     text-align: center;
-    color: aqua;
+    color: rgba(7, 250, 250, 0.925);
     padding-top: 5px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-    
+    font-family: 'Times New Roman', Times, serif;
+
 }
 
-.t2{
+P {
     font-size: large;
-    margin-top: auto;
+}
+
+.t2 {
+    font-size: x-large;
     padding-top: 5px;
     color: rgb(25, 219, 233);
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.container-cursos{
+.container-cursos {
     width: 100%;
     height: 400px;
     margin-top: 400px;
-    display: block;   
+    display: block;
 }
-.cursos{
+
+.cursos {
     width: 350px;
     display: block;
     flex-direction: row;
@@ -229,12 +322,12 @@ main {
     background: rgba(20, 20, 20, 0.788);
     border-radius: 10%;
     height: 400px;
-    padding-left:8px ;
-    padding-right:8px ;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 
-.imagens{
+.imagens {
     width: 30%;
 }
 
@@ -242,20 +335,23 @@ H3 {
     position: relative;
     top: 5px;
     text-align: center;
-    font-size:x-large;
+    font-size: x-large;
     font-family: 'Times New Roman', Times, serif;
-    color: #0a0edf;
+    color: #04f0f8af;
 }
 
-#html, #js, #php, #rjs{
+#html,
+#js,
+#php,
+#rjs {
     text-align: justify;
     font-family: 'Times New Roman', Times, serif;
     top: 10px;
-    color: aqua;
+    color: #04f0f8af;
 }
 
 
-.glow-on-hover-html{
+.glow-on-hover-html {
     border-radius: 30px;
     color: rgb(27, 221, 221);
     border-color: rgb(27, 221, 221);
@@ -264,14 +360,15 @@ H3 {
     position: relative;
     top: 40px;
 }
-.glow-on-hover-html:hover{  
+
+.glow-on-hover-html:hover {
     background: rgb(164, 180, 214);
     color: rgb(174, 0, 255);
     border-color: #4c0aa3;
 
 }
 
-.glow-on-hover-javascript{
+.glow-on-hover-javascript {
     border-radius: 30px;
     color: rgb(27, 221, 221);
     border-color: rgb(27, 221, 221);
@@ -279,16 +376,17 @@ H3 {
     padding: 8px;
     position: relative;
     top: 15px;
-    
+
 }
-.glow-on-hover-javascript:hover{  
+
+.glow-on-hover-javascript:hover {
     background: rgb(164, 180, 214);
     color: rgb(174, 0, 255);
     border-color: #4c0aa3;
 
 }
 
-.glow-on-hover-php{
+.glow-on-hover-php {
     border-radius: 30px;
     color: rgb(27, 221, 221);
     border-color: rgb(27, 221, 221);
@@ -296,16 +394,17 @@ H3 {
     padding: 8px;
     position: relative;
     top: 105px;
-    
+
 }
-.glow-on-hover-php:hover{  
+
+.glow-on-hover-php:hover {
     background: rgb(164, 180, 214);
     color: rgb(174, 0, 255);
     border-color: #4c0aa3;
 
 }
 
-.glow-on-hover-react{
+.glow-on-hover-react {
     border-radius: 30px;
     color: rgb(27, 221, 221);
     border-color: rgb(27, 221, 221);
@@ -313,9 +412,10 @@ H3 {
     padding: 8px;
     position: relative;
     top: 100px;
-    
+
 }
-.glow-on-hover-react:hover{  
+
+.glow-on-hover-react:hover {
     background: rgb(164, 180, 214);
     color: rgb(174, 0, 255);
     border-color: #4c0aa3;
@@ -331,17 +431,18 @@ H3 {
     cursor: pointer;
 }
 
-.about-image img-fluid{
+.about-image img-fluid {
     border-radius: 10PX;
 }
-.depoimentos{
+
+.depoimentos {
     width: 100%;
     height: 400px;
-    display: block; 
+    display: block;
     margin-top: 800px;
 }
 
-.cursos-depoimentos{
+.cursos-depoimentos {
     width: 350px;
     height: 600px;
     display: block;
@@ -350,23 +451,23 @@ H3 {
     margin: 50px;
     text-align: center;
     border-radius: 10%;
-    padding-left:8px ;
-    padding-right:8px ;
+    padding-left: 8px;
+    padding-right: 8px;
     margin-left: 50px;
     background: rgba(20, 20, 20, 0.788)
 }
 
-.section-title{
+.section-title {
     text-align: center;
     font-size: x-large;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgba(136, 247, 247, 0.911);
+    font-family: 'Times New Roman', Times, serif;
+    color: #09eff7fa;
 }
 
-.section-title-bottom{
+.section-title-bottom {
     flex-direction: row;
     margin-left: 700px;
-    
+
 }
 
 span {
@@ -374,28 +475,28 @@ span {
     display: block;
 }
 
-.image{
+.image {
     border-radius: 20px;
 }
 
-.tt-dp{
+.tt-dp {
     position: relative;
     top: 0px;
     text-align: center;
-    font-size:x-large;
+    font-size: x-large;
     font-family: 'Times New Roman', Times, serif;
-    color: rgba(136, 247, 247, 0.911);
-    
+    color: #04f0f8af;
+
 }
 
-.texto-depo{
+.texto-depo {
     text-align: justify;
-    color:  rgba(136, 247, 247, 0.911);
+    color: #04f0f8af;
 }
 
 
 /*Formulário - Loguin*/
-#formulario{
+#formulario {
     width: 600px;
     height: 300px;
     background: rgba(25, 219, 233, 0.377);
@@ -404,7 +505,7 @@ span {
     margin: 300px auto;
 }
 
-#formulario2{
+#formulario2 {
     position: relative;
     top: 25px;
     width: 450px;
@@ -414,7 +515,7 @@ span {
     border-radius: 30px;
 }
 
-#formulario3{
+#formulario3 {
     position: relative;
     top: 60px;
     width: 450px;
@@ -423,7 +524,7 @@ span {
     border-radius: 30px;
 }
 
-.formulário-texto{
+.formulário-texto {
     position: relative;
     left: 3px;
     border-radius: 15px;
@@ -431,28 +532,29 @@ span {
     width: 200px;
 }
 
-.formulario-senha{
+.formulario-senha {
     border-radius: 15px;
     width: 200px;
     height: 25px;
 }
 
-#editar-senha{
+#editar-senha {
     position: relative;
     left: 13px;
 }
 
-.botao-formulario{
+.botao-formulario {
     width: 100px;
     border-radius: 30px;
 }
-.botao-formulario:hover{
+
+.botao-formulario:hover {
     background: rgb(164, 180, 214);
 }
 
 
 /*Formulário - Registro*/
-#formulario-registro{
+#formulario-registro {
     width: 600px;
     height: 500px;
     background: rgba(25, 219, 233, 0.377);
@@ -461,7 +563,7 @@ span {
     margin: 300px auto;
 }
 
-#formulario2-registro{
+#formulario2-registro {
     position: relative;
     top: 45px;
     width: 450px;
@@ -471,7 +573,7 @@ span {
     border-radius: 30px;
 }
 
-#formulario3-registro{
+#formulario3-registro {
     position: relative;
     top: 60px;
     width: 450px;
@@ -480,7 +582,7 @@ span {
     border-radius: 30px;
 }
 
-.formulário-texto-registro{
+.formulário-texto-registro {
     position: relative;
     left: 3px;
     border-radius: 15px;
@@ -488,35 +590,36 @@ span {
     width: 200px;
 }
 
-.formulario-senha-registro{
+.formulario-senha-registro {
     border-radius: 15px;
     width: 200px;
     height: 25px;
 }
 
-#editar-senha-registro{
+#editar-senha-registro {
     position: relative;
     left: 13px;
 }
 
-.botao-formulario-registro{
+.botao-formulario-registro {
     width: 100px;
     border-radius: 30px;
 }
-.botao-formulario-registro:hover{
+
+.botao-formulario-registro:hover {
     background: rgb(164, 180, 214);
 }
 
 
 /*Rodape*/
 
-.rodape{
+.rodape {
     display: block;
     position: relative;
-    color:#000000;
-    padding:0.5rem;
+    color: #000000;
+    padding: 0.5rem;
     background-color: rgba(25, 219, 233, 0.171);
-    font-family:"Abel", sans-serif;
+    font-family: "Abel", sans-serif;
     font-size: 0.93rem;
     text-align: center;
     margin-top: 1500px;
@@ -525,3 +628,14 @@ span {
 
 
 
+@media screen and (max-width:500px) {
+
+    /* MAX-WIDHT = TELA MENORES QUE ALGUMA RESOLUCAO */
+    h1 {
+        color: #0a0edf;
+    }
+
+}
+
+/*  OUTROS MODOS */
+/* SCREEN, PRINT, SPEECH, ALL */
